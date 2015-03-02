@@ -7,3 +7,5 @@ It is pure bash except for the need to use one external binary called "whoami". 
 This is what it looks like:
 
 ![screenshot](https://raw.githubusercontent.com/onelittlehope/bash-prompt/master/bash_prompt.png)
+
+![screenshot](https://raw.githubusercontent.com/onelittlehope/bash-prompt/master/bash_prompt2.png)
