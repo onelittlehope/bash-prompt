@@ -28,10 +28,9 @@ function __my_prmpt_cmd {
     C6="\[\e[1;100;97m\]"                       # Path
     C7="\[\e[0m\]"                              # Reset all colours
 
-    # Unfortunately, we must call the external binary whoami to find out who
-    # we are since its the only reliable way of identifying who we currently
-    # are. (Please prove me wrong! I dislike having to use this.)
-    myUSER=$(whoami)
+    # Removed external dependency to the whoami binary by using $LOGNAME.
+    # Source: https://github.com/coreyreichle/bash-prompt/commit/bf4fa432b418e5701ee153adcd7ede9f672d5f01
+    myUSER=$LOGNAME
     USER_WIDTH=${#myUSER}
 
     # Make PWD nicer by replacing our home directory with ~ if possible.

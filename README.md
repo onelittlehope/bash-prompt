@@ -1,7 +1,7 @@
 # bash-prompt
 A neat looking bash prompt which dynamically trims the PWD and warns if you have background jobs.
 
-It is pure bash except for the need to use one external binary called "whoami". Unfortunately this is needed since I've found no other way to reliably figure out which user is logged in.
+It is pure bash and doesn't call any external dependencies.
 
 # Screenshot
 This is what it looks like:
